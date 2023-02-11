@@ -1,110 +1,130 @@
 <!--Delimitador de tipo de documento-->
 <!DOCTYPE html>
-<html lang="es">
+
 <head>
+    <!--Indicador para caracteres especiales-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="Descripcion del sitio">
+    <!-- Icono/IMG de pagina-->
+    <link rel="icon" href="ico/favicon.ico" type="imagen/x-icon">
+    <!--Titulo de pagina-->
+    <title>Actividad 1 │ Diseño web </title>
+
+    <!--Enlace a archivo *.css utilizado para estilos-->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Yeimi</title>
+    <!--Enlace a archivo de *.js que contenga una clase:-->
+    <script src="js/script.js"></script>
 
-</head>
 <body>
+    <!--Una sección de navegación-->
     <header>
-        <img src="img/logo.png" alt="Aqui debería estar el logo">
-        <h1>Mi primer paginita web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Enlace 1</a></li>
-                <li><a href="#">Enlace 2</a></li>
-                <li><a href="#">Enlace 3</a></li>
-                <li><a href="https://www.google.com" target="_blank">Google</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-                <li><a href="pdf/EL_DIARIO.pdf" download>Descargar Libro "El Diario"</a></li>
-                <li><a href="login.html">Ir a login</a></li>
-                <li><a href="javascript:notificacion.Mostrar()">Motrar notificacion</a></li>
-            </ul>
-        </nav>
+        <h1>Actividad 1 │ Diseño web</h1>
     </header>
-    <main>
-        <article>
-            <h2>Titulo del articulo</h2>
-            <header>
-                <h3>Este es el encabezado del articulo </h3>
-                <p>Fecha del articulo: <time datetime="2023-02-10">10 de febrero de 2023</time> </p>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempora perferendis 
-                ad sit magni eos, non vero inventore iste, laboriosam 
-                facere quia. Molestias fugiat maxime minima ipsam quis
-                ad excepturi ratione laborum delectus ex eligendi 
-                distinctio odit quod, temporibus hic sunt natus optio 
-                et, ipsa nam doloremque in sapiente? Aut veritatis vel,
-                itaque sequi at voluptas, dolorem saepe assumenda odio 
-                repellendus voluptate voluptatibus facilis. Dolor esse 
-                nihil nemo cum maiores commodi, cumque voluptate minima 
-                molestiae ab excepturi sint omnis veritatis repellat 
-                labore reprehenderit sapiente, beatae sed rem. Sequi 
-                nostrum, tempora voluptatem, possimus accusamus cupiditate
-                corporis fugit, sit dicta ab hic!</p>
-                <ol >
-                    <li>Lista ordenada generica</li>
-                    <li>Lista ordenada generica 2</li>
-                    <li>Lista ordenada generica 3</li>
-                </ol>
-                <ol style="list-style-type: upper-roman;">
-                    <li>Lista ordenada romana</li>
-                    <li>Lista ordenada romana 2</li>
-                    <li>Lista ordenada romana 3</li>
-                </ol>
-                <ol style="list-style-type: lower-alpha;">
-                    <li>Lista ordenada generica</li>
-                    <li>Lista ordenada generica 2</li>
-                    <li>Lista ordenada generica 3</li>
-                </ol>
-                <img src="img/articulo1.jpg" class="imagen" alt="Imagen de articulo 1">
-        </article>
-        <article>
-            <h2>Titulo del articulo 2</h2>
-            <header>
-                <h3>Este es el encabezado del articulo 2 </h3>
-                <p>Fecha del articulo: <time datetime="2023-02-10">10 de febrero de 2023</time> </p>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempora perferendis 
-                ad sit magni eos, non vero inventore iste, laboriosam 
-                facere quia. Molestias fugiat maxime minima ipsam quis
-                ad excepturi ratione laborum delectus ex eligendi 
-                distinctio odit quod, temporibus hic sunt natus optio 
-                et, ipsa nam doloremque in sapiente? Aut veritatis vel,
-                itaque sequi at voluptas, dolorem saepe assumenda odio 
-                repellendus voluptate voluptatibus facilis. Dolor esse 
-                nihil nemo cum maiores commodi, cumque voluptate minima 
-                molestiae ab excepturi sint omnis veritatis repellat 
-                labore reprehenderit sapiente, beatae sed rem. Sequi 
-                nostrum, tempora voluptatem, possimus accusamus 
-                cupiditate corporis fugit, sit dicta ab hic!</p>
-        </article>
-        
-        <ol >
-            <li>Lista ordenada generica</li>
-            <li>Lista ordenada generica 2</li>
-            <li>Lista ordenada generica 3</li>
-        </ol>
-        <ol style="list-style-type: upper-roman;">
-            <li>Lista ordenada romana</li>
-            <li>Lista ordenada romana 2</li>
-            <li>Lista ordenada romana 3</li>
-        </ol>
-        <ol style="list-style-type: lower-alpha;">
-            <li>Lista ordenada generica</li>
-            <li>Lista ordenada generica 2</li>
-            <li>Lista ordenada generica 3</li>
-        </ol>
-    </main>
-    <img src="img/articulo2.jpg" class="imagen" alt="Imagen de articulo 2">
-    <footer>
+    <nav>
+        <!--Lista desordenada-->
+        <ul>
+            <!--3 enlaces internos-->
+            <li><a href="#articulo1">Enlace interno 1 (Articulo 1)</a></li>
+            <li><a href="#articulo2">Enlace interno 2 (Articulo 2)</a></li>
+            <li><a href="#">Enlace interno 3</a></li>
 
-    </footer>
-    <script src="js/script.js"> </script>
+            <!--3 enlaces externos-->
+            <li><a href="https://www.youtube.com/">Enlace externo a Youtube</a></li>
+            <li><a href="https://www.twitter.com/">Enlace externo a Twitter</a></li>
+            <li><a href="https://www.facebook.com/">Enlace externo a Facebook</a></li>
+
+            <!--Enlace a archivos de descarga-->
+            <li><a href="pdf/EL_DIARIO.pdf">Enlace a archivo de descarga</a></li>
+            <!--Enlace a archivos de contenido-->
+            <li><a href="login.html">Enlace a archivo de contenido Ejemplo: login</a></li>
+            <!--Enlace de ejecucion JS-->
+            <li><a href="javascript:notificacion.Mostrar('Has presionado la opcion en la lista desordenada')">Enlace de
+                    ejecucion de JS</a></li>
+        </ul>
+    </nav>
+
+    <article id="articulo1">
+        <!--Encabezado de articulo-->
+        <header>
+            <!--Titulo de articulo-->
+            <h2>Primera prueba de pagina web</h2>
+            <!--Fecha de articulo-->
+            <time datetime="2023-2-10T21:00">10 de febrero de 2023 a las 21h</time>
+        </header>
+        <div id="content-art1">
+            <!--Contenido del articulo-->
+            <p>El diseño web es un área enfocada a planificar, diseñar, mantener y crear interfaces digitales. En pocas
+                palabras, como su nombre lo indica, el diseño web se refiere al proceso del diseño de sitios y páginas
+                web.
+            </p>
+
+            <!--Ejemplos de lista-->
+            <p>Ejemplo de lista ordenada, numeracion decimal</p>
+            <ol>
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <p>Ejemplo de lista ordenada, numeracion romana</p>
+            <ol id="list-romana">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <p>Ejemplo de lista ordenada, numeracion alfabetica</p>
+            <ol id="list-alpha">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <img src="img/paginas-web.jpg" class="imagen">
+        </div>
+
+        <footer id="footer-art1">
+            <h4>Yeimi Castro</h4>
+            <p>Estudiante de diseño</p>
+        </footer>
+    </article>
+     <article id="articulo2">
+        <!--Encabezado de articulo-->
+        <header>
+            <!--Titulo de articulo-->
+            <h2>Segunda prueba de pagina web</h2>
+            <!--Fecha de articulo-->
+            <time datetime="2023-2-10T21:00">10 de febrero de 2023 a las 21h</time>
+        </header>
+        <div id="content-art2">
+            <!--Contenido del articulo-->
+            <p>El diseño web es un área enfocada a planificar, diseñar, mantener y crear interfaces digitales. En pocas
+                palabras, como su nombre lo indica, el diseño web se refiere al proceso del diseño de sitios y páginas
+                web.
+            </p>
+
+            <!--Ejemplos de lista-->
+            <p>Ejemplo de lista ordenada, numeracion gregoriana</p>
+            <ol id="list-gregorian2">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <p>Ejemplo de lista ordenada, numeracion romana en minuscula</p>
+            <ol id="list-romana2">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <p>Ejemplo de lista ordenada, numeracion alfabetica mayuscula</p>
+            <ol id="list-alpha2">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <!--Deberá de contener una imagen la cual deberá contener una CLASSE que le asigne alineación, borde y sombreado-->
+            <img src="img/paginas-web.jpg" class="imagen">
+        </div>
+
+        <footer id="footer-art2">
+            <h4>Yeimi Castro</h4>
+            <p>Estudiante de diseño</p>
+        </footer>
+    </article>
 </body>
-</html>

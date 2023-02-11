@@ -1,10 +1,102 @@
-.imagen{
-    border: 5px solid #ff7300;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+/*
+Cada artículo deberá de ser pre formateado por estilos CSS básicos como:
+ Tamaño de tipografía
+ Tipo de tipografía
+ Enunciación de tipografía
+ Color de tipografía
+ Sombra de tipografía
+
+*/
+#articulo1{
+    width: 90%;
+    margin: 0  auto;
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
 }
 
+#articulo1 header{
+    background-color: rgb(7, 49, 46);
+    text-align: center;
+    color: #f0fcfc;
+    padding: 10px 0 20px 0;
+}
+#articulo1 h2{
+    font-size: 20pt;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #cccccc;
+}
 
+#content-art1{
+    width: 90%;
+    margin: 0 auto;
+}
+#list-romana{
+    list-style-type: upper-roman;
+}
+#list-alpha{
+    list-style-type: lower-alpha;
+}
 
+#footer-art1{
+    
+    font-style: italic;
+    background-color: rgb(167, 170, 172);
+    font-size: 18pt;
+    text-align: center;
+    color: #051818;
+    padding: 10px 0 20px 0;
+    margin: 50px auto;
+}
+
+.imagen{
+    display: block;
+    width: 50%;
+    margin: 0  auto;
+    border: 5px solid rgb(11, 47, 87);
+    box-shadow: 20px 10px 10px;    /* Sombra con ligero desenfoque */
+}
+
+#articulo2{
+    width: 90%;
+    margin: 0  auto;
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+}
+
+#articulo2 header{
+    background-color: rgb(7, 15, 49);
+    text-align: center;
+    color: #f0fcfc;
+    padding: 10px 0 20px 0;
+}
+#articulo2 h2{
+    font-size: 20pt;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #cccccc;
+}
+
+#content-art2{
+    width: 90%;
+    margin: 0 auto;
+}
+#list-gregorian2{
+    list-style-type:georgian;
+}
+#list-romana2{
+    list-style-type: lower-roman;
+}
+#list-alpha2{
+    list-style-type: upper-alpha;
+}
+
+#footer-art2{
+    
+    font-style: italic;
+    background-color: rgb(167, 170, 172);
+    font-size: 18pt;
+    text-align: center;
+    color: #051818;
+    padding: 10px 0 20px 0;
+    margin: 50px auto;
+}
