@@ -1,0 +1,10 @@
+.imagen{
+    border: 5px solid #ff7300;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
