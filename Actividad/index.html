@@ -1,0 +1,214 @@
+<!--Delimitador de tipo de documento-->
+<!DOCTYPE html>
+
+<head>
+    <!--Indicador para caracteres especiales-->
+    <meta charset="UTF-8">
+    <!-- Icono/IMG de pagina-->
+    <link rel="icon" href="ico/favicon.ico" type="imagen/x-icon">
+    <!--Titulo de pagina-->
+    <title>Actividad 1 │ Diseño web </title>
+
+    <!--Enlace a archivo *.css utilizado para estilos-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Enlace a archivo de *.js que contenga una clase:-->
+    <script src="js/script.js"></script>
+
+<body>
+    <header class="header">
+        
+    <!--Una sección de navegación-->
+        <nav class="menu">
+        <h1 class="logo">Actividad 1 │ Diseño web</h1>
+            <!--Lista desordenada-->
+            <ul>
+                <!--3 enlaces internos-->
+                <li class="opciones"><a href="#articulo1">Enlace interno 1 (Ver articulos)</a></li>
+                <li class="opciones"><a href="#galeria">Enlace interno 3 (Ir a galeria)</a></li>
+                <li class="opciones"><a href="#formulario-registro">Enlace interno 3 (Ir a formulario de registro)</a></li>
+
+                <!--3 enlaces externos-->
+                <li class="opciones"><a href="https://www.youtube.com/">Enlace externo a Youtube</a></li>
+                <li class="opciones"><a href="https://www.twitter.com/">Enlace externo a Twitter</a></li>
+                <li class="opciones"><a href="https://www.facebook.com/">Enlace externo a Facebook</a></li>
+
+                <!--Enlace a archivos de descarga-->
+                <li class="opciones"><a href="pdf/EL_DIARIO.pdf">Enlace a archivo de descarga</a></li>
+                <!--Enlace a archivos de contenido-->
+                <li class="opciones"><a href="login.html">Enlace a archivo de contenido Ejemplo: login</a></li>
+                <!--Enlace de ejecucion JS-->
+                <li class="opciones"><a href="javascript:notificacion.Mostrar('Has presionado la opcion en la lista desordenada')">Enlace
+                        de
+                        ejecucion de JS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="articulo1">
+        <!--Encabezado de articulo-->
+        <header>
+            <!--Titulo de articulo-->
+            <h2>Primera prueba de pagina web</h2>
+            <!--Fecha de articulo-->
+            <time datetime="2023-2-10T21:00">10 de febrero de 2023 a las 21h</time>
+        </header>
+        <div id="content-art1">
+            <!--Contenido del articulo-->
+            <p>El diseño web es un área enfocada a planificar, diseñar, mantener y crear interfaces digitales. En pocas
+                palabras, como su nombre lo indica, el diseño web se refiere al proceso del diseño de sitios y páginas
+                web.
+            </p>
+
+            <!--Ejemplos de lista-->
+            <p>Ejemplo de lista ordenada, numeracion decimal</p>
+            <ol>
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <p>Ejemplo de lista ordenada, numeracion romana</p>
+            <ol id="list-romana">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <p>Ejemplo de lista ordenada, numeracion alfabetica</p>
+            <ol id="list-alpha">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <img src="img/paginas-web.jpg" class="imagen" alt="Imagen obtenida de la web">
+        </div>
+
+        <footer id="footer-art1">
+            <h4>Yeimi Castro</h4>
+            <p>Estudiante de diseño</p>
+        </footer>
+    </article>
+    <article id="articulo2">
+        <!--Encabezado de articulo-->
+        <header>
+            <!--Titulo de articulo-->
+            <h2>Segunda prueba de pagina web</h2>
+            <!--Fecha de articulo-->
+            <time datetime="2023-2-10T21:00">10 de febrero de 2023 a las 21h</time>
+        </header>
+        <div id="content-art2">
+            <!--Contenido del articulo-->
+            <p>El diseño web es un área enfocada a planificar, diseñar, mantener y crear interfaces digitales. En pocas
+                palabras, como su nombre lo indica, el diseño web se refiere al proceso del diseño de sitios y páginas
+                web.
+            </p>
+
+            <!--Ejemplos de lista-->
+            <p>Ejemplo de lista ordenada, numeracion gregoriana</p>
+            <ol id="list-gregorian2">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <p>Ejemplo de lista ordenada, numeracion romana en minuscula</p>
+            <ol id="list-romana2">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <p>Ejemplo de lista ordenada, numeracion alfabetica mayuscula</p>
+            <ol id="list-alpha2">
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+            <!--Deberá de contener una imagen la cual deberá contener una CLASSE que le asigne alineación, borde y sombreado-->
+            <img src="img/paginas-web.jpg" class="imagen" alt="Imagen obtenida de la web">
+            <!--La imagen deberá de contener autoría-->
+        </div>
+
+        <footer id="footer-art2">
+            <h4>Yeimi Castro</h4>
+            <p>Estudiante de diseño</p>
+        </footer>
+    </article>
+
+    <section id="galeria">
+        <!-- Imagen de carga interna -->
+        <!-- Mapa con enlaces externos -->
+        <map id="mapa_region">
+            <area shape="rect" coords="10,0,50,50" href="https://facebook.com/" alt="Abrir Facebook" title="Facebook">
+            <area shape="rect" coords="51,0,100,50" href="https://youtube.com/" alt="Abrir Youtube" title="Youtube">
+        </map>
+
+        <!-- Asociación de la imagen interna con el mapa -->
+        <img src="imagen_interna.jpg" usemap="#mapa_region" alt="Mapa de la región">
+
+        <!-- Imagen de carga desde fuera del directorio de la página solicitante -->
+        <img src="../imagen_externa.jpg" alt="Foto de un paisaje">
+
+        <!-- Imagen de acceso externo o vía HTTP -->
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Foto de un edificio">
+
+    </section>
+
+    <form action="/" method="post" class="formulario" id="formulario-registro">
+        <!-- Campo para ingresar el DUI -->
+        <label for="dui">DUI:</label>
+        <input type="text" id="dui" name="dui" required>
+
+        <!-- Campo para ingresar los nombres -->
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required>
+
+        <!-- Campo para ingresar los apellidos -->
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <!-- Campo para seleccionar el sexo -->
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="">Seleccione una opción</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+
+        <!-- Campo para ingresar el número de teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <!-- Campo para ingresar el correo electrónico -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Campo para seleccionar el departamento -->
+        <label for="departamento">Departamento:</label>
+        <select id="departamento" name="departamento" required>
+            <option value="">Seleccione una opción</option>
+            <option value="san_salvador">San Salvador</option>
+            <option value="santa_ana">Santa Ana</option>
+            <option value="sonso">Sonsonate</option>
+        </select>
+
+        <!-- Campo para ingresar la dirección -->
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion">
+
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Enviar" onclick="limpiarFormulario()">
+    </form>
+
+    <script>
+        // Función para limpiar los datos del formulario después de enviarlos
+        function limpiarFormulario() {
+            document.getElementById("dui").value = "";
+            document.getElementById("nombres").value = "";
+            document.getElementById("apellidos").value = "";
+            document.getElementById("sexo").value = "";
+            document.getElementById("telefono").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("departamento").value = "";
+            document.getElementById("direccion").value = "";
+            // Notificación al usuario después de enviar los datos
+            notificacion.Mostrar("Sus datos han sido enviados con éxito.");
+        }
+    </script>
+</body>
