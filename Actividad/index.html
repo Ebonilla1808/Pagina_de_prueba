@@ -16,28 +16,33 @@
 
 <body>
     <header class="header">
-        
-    <!--Una sección de navegación-->
+
+        <!--Una sección de navegación-->
         <nav class="menu">
-        <h1 class="logo">Actividad 1 │ Diseño web</h1>
+            <h1 class="logo">Actividad 1 │ Diseño web</h1>
             <!--Lista desordenada-->
             <ul>
                 <!--3 enlaces internos-->
                 <li class="opciones"><a href="#articulo1">Enlace interno 1 (Ver articulos)</a></li>
                 <li class="opciones"><a href="#galeria">Enlace interno 3 (Ir a galeria)</a></li>
-                <li class="opciones"><a href="#formulario-registro">Enlace interno 3 (Ir a formulario de registro)</a></li>
+                <li class="opciones"><a href="#formulario-registro">Enlace interno 3 (Ir a formulario de registro)</a>
+                </li>
 
                 <!--3 enlaces externos-->
-                <li class="opciones"><a href="https://www.youtube.com/">Enlace externo a Youtube</a></li>
-                <li class="opciones"><a href="https://www.twitter.com/">Enlace externo a Twitter</a></li>
-                <li class="opciones"><a href="https://www.facebook.com/">Enlace externo a Facebook</a></li>
+                <li class="opciones"><a href="https://www.youtube.com/" target="_blank">Enlace externo a Youtube</a>
+                </li>
+                <li class="opciones"><a href="https://www.twitter.com/" target="_blank">Enlace externo a Twitter</a>
+                </li>
+                <li class="opciones"><a href="https://www.facebook.com/" target="_blank">Enlace externo a Facebook</a>
+                </li>
 
                 <!--Enlace a archivos de descarga-->
-                <li class="opciones"><a href="pdf/EL_DIARIO.pdf">Enlace a archivo de descarga</a></li>
+                <li class="opciones"><a href="pdf/EL_DIARIO.pdf" download="">Enlace a archivo de descarga</a></li>
                 <!--Enlace a archivos de contenido-->
                 <li class="opciones"><a href="login.html">Enlace a archivo de contenido Ejemplo: login</a></li>
                 <!--Enlace de ejecucion JS-->
-                <li class="opciones"><a href="javascript:notificacion.Mostrar('Has presionado la opcion en la lista desordenada')">Enlace
+                <li class="opciones"><a
+                        href="javascript:notificacion.Mostrar('Has presionado la opcion en la lista desordenada')">Enlace
                         de
                         ejecucion de JS</a></li>
             </ul>
@@ -153,19 +158,19 @@
     <form action="/" method="post" class="formulario" id="formulario-registro">
         <!-- Campo para ingresar el DUI -->
         <label for="dui">DUI:</label>
-        <input type="text" id="dui" name="dui" required>
+        <input class="controles-formulario" type="text" id="dui" name="dui" required>
 
         <!-- Campo para ingresar los nombres -->
         <label for="nombres">Nombres:</label>
-        <input type="text" id="nombres" name="nombres" required>
+        <input class="controles-formulario" type="text" id="nombres" name="nombres" required>
 
         <!-- Campo para ingresar los apellidos -->
         <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" required>
+        <input class="controles-formulario" type="text" id="apellidos" name="apellidos" required>
 
         <!-- Campo para seleccionar el sexo -->
         <label for="sexo">Sexo:</label>
-        <select id="sexo" name="sexo" required>
+        <select class="controles-formulario" id="sexo" name="sexo" required>
             <option value="">Seleccione una opción</option>
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
@@ -173,15 +178,15 @@
 
         <!-- Campo para ingresar el número de teléfono -->
         <label for="telefono">Teléfono:</label>
-        <input type="text" id="telefono" name="telefono">
+        <input class="controles-formulario" type="text" id="telefono" name="telefono">
 
         <!-- Campo para ingresar el correo electrónico -->
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input class="controles-formulario" type="email" id="email" name="email" required>
 
         <!-- Campo para seleccionar el departamento -->
         <label for="departamento">Departamento:</label>
-        <select id="departamento" name="departamento" required>
+        <select class="controles-formulario" id="departamento" name="departamento" required>
             <option value="">Seleccione una opción</option>
             <option value="san_salvador">San Salvador</option>
             <option value="santa_ana">Santa Ana</option>
@@ -190,25 +195,44 @@
 
         <!-- Campo para ingresar la dirección -->
         <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion">
+        <input class="controles-formulario" type="text" id="direccion" name="direccion">
 
         <!-- Botón para enviar el formulario -->
-        <input type="submit" value="Enviar" onclick="limpiarFormulario()">
+        <input id="btnEnviar" class="controles-formulario" type="submit" onclick="limpiarFormulario()" value="Enviar">
     </form>
 
     <script>
+        //Objeto de clase Notificacion 
+
+        const notificacion = new Notificacion();
+
         // Función para limpiar los datos del formulario después de enviarlos
         function limpiarFormulario() {
-            document.getElementById("dui").value = "";
-            document.getElementById("nombres").value = "";
-            document.getElementById("apellidos").value = "";
-            document.getElementById("sexo").value = "";
-            document.getElementById("telefono").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("departamento").value = "";
-            document.getElementById("direccion").value = "";
-            // Notificación al usuario después de enviar los datos
-            notificacion.Mostrar("Sus datos han sido enviados con éxito.");
+            
+            //Se capturan los valores de los campos
+            let dui = document.getElementById("dui").value;
+            let nombre = document.getElementById("nombres").value;
+            let apellido = document.getElementById("apellidos").value;
+            let sexo = document.getElementById("sexo").value;
+            let email = document.getElementById("email").value;
+            let departamento = document.getElementById("departamento").value;
+
+            //Si alguno de los campos no trae informacion no se hara nada
+            if (dui != "" && nombre != "" && apellido != "" && sexo != "" && email != "" && departamento != "") {
+                //Si todos los campos vienen llenos se limpian y se notifica la accion
+                document.getElementById("dui").value = "";
+                document.getElementById("nombres").value = "";
+                document.getElementById("apellidos").value = "";
+                document.getElementById("sexo").value = "";
+                document.getElementById("telefono").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("departamento").value = "";
+                document.getElementById("direccion").value = "";
+
+                // Notificación al usuario después de enviar los datos
+                notificacion.Mostrar("Sus datos han sido enviados con éxito.");
+            }
         }
+
     </script>
 </body>

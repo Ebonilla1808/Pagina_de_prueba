@@ -9,6 +9,4 @@ class Notificacion{
 }
 
 
-const notificacion = new Notificacion();
-
 //notificacion.Mostrar();
